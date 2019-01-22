@@ -1,0 +1,5 @@
+.pytest_cache/
+.vscode/
+*.pyc
+.solution.json
+__pycache__/
