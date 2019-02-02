@@ -1,2 +1,2 @@
 def hello(name="World"):
-    return "Hello, {}!".format(name)
+    return f"Hello, {name}!"
