@@ -3,3 +3,4 @@
 *.pyc
 .solution.json
 __pycache__/
+.exercism/
