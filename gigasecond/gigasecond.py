@@ -2,7 +2,6 @@ from datetime import datetime
 
 def add_gigasecond(moment):
     try:
-        newdate= datetime.fromtimestamp(moment.timestamp() + (10 ** 9))
-        return newdate
+        return datetime.fromtimestamp(moment.timestamp() + (10 ** 9))
     except Exception:
         print('Not a date')
