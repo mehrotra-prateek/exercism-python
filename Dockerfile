@@ -1,6 +1,8 @@
-FROM python:3.6-alpine as base
+FROM python:3.7.4-alpine as base
 
 FROM base as builder
+
+RUN pip install --upgrade pip
 
 ARG work_dir
 ENV workdir=${work_dir}
