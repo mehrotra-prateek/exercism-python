@@ -4,7 +4,6 @@ from space_age import SpaceAge
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.2.0
 
-
 class SpaceAgeTest(unittest.TestCase):
     def test_age_on_earth(self):
         self.assertEqual(SpaceAge(1000000000).on_earth(), 31.69)
@@ -29,7 +28,6 @@ class SpaceAgeTest(unittest.TestCase):
 
     def test_age_on_neptune(self):
         self.assertEqual(SpaceAge(1821023456).on_neptune(), 0.35)
-
 
 if __name__ == "__main__":
     unittest.main()
