@@ -1,6 +1,6 @@
 from __future__ import division
-
 from math import gcd
+
 
 class Rational(object):
     def __init__(self, numer, denom):

@@ -1,5 +1,5 @@
 def response(hey_bob):
-    str=hey_bob.strip()
+    str = hey_bob.strip()
     if str == "":
         return "Fine. Be that way!"
     elif str.isupper() and hey_bob[-1] == "?":

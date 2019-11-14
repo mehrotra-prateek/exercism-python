@@ -4,7 +4,3 @@ def is_isogram(string=""):
     else:
         string = list(filter(str.isalpha, string.lower()))
         return len(set(string)) == len(string)
-
-
-
-
