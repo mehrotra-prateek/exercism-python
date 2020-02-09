@@ -23,9 +23,11 @@ FOURS = (lambda dice: 4*Counter(dice)[4])
 FIVES = (lambda dice: 5*Counter(dice)[5])
 SIXES = (lambda dice: 6*Counter(dice)[6])
 FULL_HOUSE = (
-    lambda dice: sum(dice) if sorted(Counter(dice).values()) == [2, 3] else 0)
+    lambda dice: sum(dice) 
+    if sorted(Counter(dice).values()) == [2, 3] else 0)
 FOUR_OF_A_KIND = (
-    lambda dice: 4*Counter(dice).most_common(1)[0][0] if Counter(dice).most_common(1)[0][1] >= 4 else 0)
+    lambda dice: 4*Counter(dice).most_common(1)[0][0]
+    if Counter(dice).most_common(1)[0][1] >= 4 else 0)
 LITTLE_STRAIGHT = (lambda dice: 30 if sorted(dice) == [1, 2, 3, 4, 5] else 0)
 BIG_STRAIGHT = (lambda dice: 30 if sorted(dice) == [2, 3, 4, 5, 6] else 0)
 CHOICE = (lambda dice: sum(dice))
